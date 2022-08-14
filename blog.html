@@ -1,0 +1,176 @@
+<html>
+  <head>
+    <title>Creating Blog Page</title>
+    <link rel="stylesheet" href="blog.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- NavBar -->
+    <nav>
+      <div class="left-side">
+        <a href="index.html">
+          <img src="assets/logo.png" alt="logo" />
+        </a>
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="blog.html" class="list-active">Blog</a>
+          </li>
+        </ul>
+      </div>
+      <div class="right-side">
+        <a href="contact.html"> Contact Me </a>
+      </div>
+    </nav>
+
+    <!-- Blog -->
+    <!-- Form -->
+    <div class="blog">
+      <div class="blog-form">
+        <div class="form-container">
+          <form onsubmit="addBlog(event)">
+            <h1>ADD MY PROJECT</h1>
+            <div>
+              <label for="input-blog-title">Project name</label>
+              <input id="input-blog-title" />
+            </div>
+
+            <label for="input-blog-content">Start Date</label>
+            <input type="date" id="start" height="100px" />
+
+            <label for="input-blog-content">End Date</label>
+            <input type="date" id="start" width="100px" />
+            <div>
+              <label for="input-blog-content">Description</label>
+              <textarea id="input-blog-content"></textarea>
+            </div>
+
+            <div>
+              <label for="">Technologies</label><br /><br />
+              <label for="">java</label>
+              <input type="checkbox" id="java" value="java" />
+            </div>
+            <div>
+              <label for="">react</label>
+              <input type="checkbox" id="react" value="react" />
+            </div>
+            <div>
+              <label>Upload Image</label>
+              <div class="input-blog-image-group">
+                <label for="input-blog-image">
+                  <p>Choose</p>
+                  <img src="assets/file.png" alt="file" />
+                </label>
+                <input type="file" id="input-blog-image" hidden />
+              </div>
+            </div>
+            <div class="button-group">
+              <button>Submit</button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- start -->
+      <hr class="line" />
+      <div id="contents" class="blog-list">
+        <!-- akhir -->
+        <section class="container card">
+          <div class="testimoni">
+            <div class="testimoni-img">
+              <img src="assets/blog-img-detail.png" alt="" />
+            </div>
+            <div class="blog-content">
+              <p class="testimoni-text">Lorem ipsum iste aperiam enim quisquam nesciunt delectus doloremque est praesentium, maxime minima, qui dicta reprehenderit?</p>
+              <i class="fa-brands fa-node-js"></i>
+              <i class="fa-brands fa-react"></i>
+              <i class="fa-brands fa-react"></i>
+            </div>
+            <div class="btn-group1">
+              <button class="btn-edit1">Edit</button>
+              <button class="btn-post1">Delete</button>
+            </div>
+            <h1>
+              <a href="blog-detail.html" target="_blank">Pasar Coding di Indonesia Dinilai Masih Menjanjikan</a>
+            </h1>
+            <div class="detail-blog-content">12 Jul 2021 22:30 WIB | Ichsan Emrald Alamsyah</div>
+          </div>
+          <div class="testimoni">
+            <div class="testimoni-img">
+              <img src="assets/blog-img-detail.png" alt="" />
+            </div>
+            <p class="testimoni-text">Lorem ipsum iste aperiam enim quisquam nesciunt delectus doloremque est praesentium, maxime minima, qui dicta reprehenderit?</p>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-react"></i>
+            <div class="btn-group1">
+              <button class="btn-edit1">Edit</button>
+              <button class="btn-post1">Delete</button>
+            </div>
+          </div>
+          <div class="testimoni">
+            <div class="testimoni-img">
+              <img src="assets/astronaut.jpg" alt="" />
+            </div>
+            <p class="testimoni-text">Lorem ipsum iste aperiam enim quisquam nesciunt delectus doloremque est praesentium, maxime minima, qui dicta reprehenderit?</p>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-react"></i>
+            <div class="btn-group1">
+              <button class="btn-edit1">Edit</button>
+              <button class="btn-post1">Delete</button>
+            </div>
+          </div>
+          <div class="testimoni">
+            <div class="testimoni-img">
+              <img src="assets/blog-img-detail.png" alt="" />
+            </div>
+            <p class="testimoni-text">Lorem ipsum iste aperiam enim quisquam nesciunt delectus doloremque est praesentium, maxime minima, qui dicta reprehenderit?</p>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-react"></i>
+            <div class="btn-group1">
+              <button class="btn-edit1">Edit</button>
+              <button class="btn-post1">Delete</button>
+            </div>
+          </div>
+          <div class="testimoni">
+            <div class="testimoni-img">
+              <img src="assets/blog-img-detail.png" alt="" />
+            </div>
+            <p class="testimoni-text">Lorem ipsum iste aperiam enim quisquam nesciunt delectus doloremque est praesentium, maxime minima, qui dicta reprehenderit?</p>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-react"></i>
+            <div class="btn-group1">
+              <button class="btn-edit1">Edit</button>
+              <button class="btn-post1">Delete</button>
+            </div>
+          </div>
+          <div class="testimoni">
+            <div class="testimoni-img">
+              <img src="assets/blog-img-detail.png" alt="" />
+            </div>
+            <p class="testimoni-text">Lorem ipsum iste aperiam enim quisquam nesciunt delectus doloremque est praesentium, maxime minima, qui dicta reprehenderit?</p>
+            <i class="fa-brands fa-node-js"></i>
+            <i class="fa-brands fa-react"></i>
+            <i class="fa-brands fa-react"></i>
+            <div class="btn-group1">
+              <button class="btn-edit1">Edit</button>
+              <button class="btn-post1">Delete</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+
+    <script src="blog.js"></script>
+  </body>
+</html>
